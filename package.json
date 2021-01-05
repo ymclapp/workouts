@@ -1,0 +1,29 @@
+{
+  "name": "workouts",
+  "version": "1.0.0",
+  "description": "LIIFT4 workouts and tracker for class",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymclapp/workouts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ymclapp/workouts/issues"
+  },
+  "homepage": "https://github.com/ymclapp/workouts#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
+    "superagent": "^6.1.0"
+  }
+}
