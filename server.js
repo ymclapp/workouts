@@ -6,8 +6,10 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3000;
 
 const express = require ('express');
-const methodOverride = require('method-override');
+// const methodOverride = require('method-override');   //<<--uncomment when the delete/update gets used in one of the view pages
+const cors = require('cors');  //<<--if we need it
 const pg = require('pg');
+const superagent = require('superagent');
 
 if(!process.env.DATABASE_URL) {
     throw 'Missing DATABASE_URL';    
@@ -16,31 +18,31 @@ const client = new pg.Client(process.env.DATABASE_URL);
 client.on('error', err => console.log(err));
 
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-app.use(methodOverride('_method'));
 
-app.use(express.static('./public'));
+
 
 //middleware
-const cors = require('cors');  //<<--if we need it
+const app = express();
 app.use(cors());
 
-
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+// app.use(methodOverride('_method'));   //<<--uncomment when the delete/update gets used in one of the view pages
+app.use(express.static('./public'));
 
 app.set('view engine', 'ejs');
 
 //routes
 app.get('/', (request, response) => {
-    response.render('index');
+    response.render('index.ejs');
 })
 
 app.get('*', (request, response) => response.status(404).send('This route does not exist'));
 
 
-app.use((err, (request, response, next) => {
-    handleError(err, response);
-}));
+// app.use((err, (request, response, next) => {
+//     handleError(err, response);
+// }));  <<--need to create before I can use
 
 
 client.connect()  //<----need to use this with the const client et al above

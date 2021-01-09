@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../layout/head') %>
+</head>
+    <body>
+        <%- include('../layout/header') %>
+<main>
+    <section class = "view container">
+<form id = "workoutEntryForm" type = "text" width = "50%">
+    <fieldset>
+        <legend id = "workoutEntryLegend">Today's Workout</legend>
+        
+        <label for = "workoutDate" style = "margin-right:18px"><b>Today's Date</b></label>
+            <input type="date"  onload = "getDate()" size = "30" maxlength="100" input id="date" required/>
+    <br><br>
+        <label for = "lastName" style = "margin-right:20px"><b>Last Name*</b></label>
+            <input type="text"  size = "30" maxlength="100" input id="lastNameInput" required/>
+    <br><br>
+        <label for = "email" style = "margin-right:53px"><b>Email*</b></label>
+            <input type="email"  size = "30" maxlength="100" input id="emailInput" required/>
+    <br><br>
+        <label for = "userName" style = "margin-right:17px"><b>User Name*</b></label>
+             <input type="text"  size = "30" maxlength="100" input id="userNameInput" required minlength="4" maxlength="10"/>
+    <br><br>
+        <label for = "password" style = "margin-right:26px"><b>Password*</b></label>
+            <input type="password"  size = "30" maxlength="100" input id="passwordInput" required minlength="6" maxlength="6"/>
+        </section>
+        </main>
+    </body>
+</html>

@@ -1,6 +1,6 @@
 --Need to seed with some of my LIIFT4 data
 INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_round, weight_used) VALUES (
-    07/15/2019,
+   '2019.07.15',
     'Week 1 - Day 1',
     'Chest Press',
     'Chest',
@@ -9,7 +9,7 @@ INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_r
 );
 
 INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_round, weight_used) VALUES (
-    07/15/2019,
+    '2019.07.15',
     'Week 1 - Day 1',
     'Skull Crusher',
     'Tricep',
@@ -18,7 +18,7 @@ INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_r
 );
 
 INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_round, weight_used) VALUES (
-    07/15/2019,
+    '2019.07.15',
     'Week 1 - Day 1',
     'Chest Fly',
     'Chest',
@@ -27,7 +27,7 @@ INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_r
 );
 
 INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_round, weight_used) VALUES (
-    07/15/2019,
+    '2019.07.15',
     'Week 1 - Day 1',
     'Tricep Press',
     'Triceps',
@@ -36,7 +36,7 @@ INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_r
 );
 
 INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_round, weight_used) VALUES (
-    07/15/2019,
+    '2019.07.15',
     'Week 1 - Day 1',
     'Rotating Chest Press',
     'Chest',
@@ -45,7 +45,7 @@ INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_r
 );
 
 INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_round, weight_used) VALUES (
-    07/16/2019,
+    '2019.07.15',
     'Week 1 - Day 2',
     'Wide Row',
     'Back',
@@ -54,7 +54,7 @@ INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_r
 );
 
 INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_round, weight_used) VALUES (
-    07/16/2019,
+    '2019.07.16',
     'Week 1 - Day 2',
     'Wide Curls',
     'Biceps',
@@ -63,7 +63,7 @@ INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_r
 );
 
 INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_round, weight_used) VALUES (
-    07/16/2019,
+    '2019.07.16',
     'Week 1 - Day 2',
     'Traditional Row',
     'Back',
@@ -72,7 +72,7 @@ INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_r
 );
 
 INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_round, weight_used) VALUES (
-    07/16/2019,
+    '2019.07.16',
     'Week 1 - Day 2',
     'Hammer Curls',
     'Biceps',
@@ -81,7 +81,7 @@ INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_r
 );
 
 INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_round, weight_used) VALUES (
-    07/16/2019,
+    '2019.07.16',
     'Week 1 - Day 2',
     'Pullovers',
     'Back',
@@ -90,7 +90,7 @@ INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_r
 );
 
 INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_round, weight_used) VALUES (
-    07/16/2019,
+    '2019.07.16',
     'Week 1 - Day 2',
     'Top Curls',
     'Biceps',
@@ -99,7 +99,7 @@ INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_r
 );
 
 INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_round, weight_used) VALUES (
-    07/16/2019,
+    '2019.07.16',
     'Week 1 - Day 2',
     'Reverse Flies',
     'Back',
@@ -108,7 +108,7 @@ INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_r
 );
 
 INSERT INTO RoundData (workout_date, week_day, exercise, focus_area,     liift_round, weight_used) VALUES (
-    07/16/2019,
+    '2019.07.16',
     'Week 1 - Day 2',
     'Bottom Curls',
     'Biceps',
