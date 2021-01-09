@@ -33,10 +33,12 @@ app.use(express.static('./public'));
 app.set('view engine', 'ejs');
 
 //routes
-app.get('/', (request, response) => {
-    response.render('index.ejs');
-})
+// app.get('/', (request, response) => {
+//     response.render('index.ejs');
+// })
 
+app.get('/', getRoundData);
+// app.get('/tasks/:task_id', getOneTask);
 app.get('*', (request, response) => response.status(404).send('This route does not exist'));
 
 
@@ -57,3 +59,21 @@ client.connect()  //<----need to use this with the const client et al above
 
   //route handlers - these are the ones that would be in modules if modularizing
   //will need routes for adding a user, adding a date/weight, 
+
+    
+  function getRoundData(request, response) {  
+  const SQL = 'SELECT * FROM RoundData';
+  client.query(SQL)
+    .then(results => {
+    const { rowCount, rows } = results;
+    console.log('/ db result', rows);
+
+    response.render('./index', {
+    roundData:  rows
+      });
+    })
+     .catch(err => {
+       handleError(err, response);
+      });
+  }
+

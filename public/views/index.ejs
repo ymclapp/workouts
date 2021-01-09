@@ -7,11 +7,20 @@
     <header>
         <%- include('../layout/header') %>
     </header>
-<section>
-    <p>Will this show up?</p>
-</section>
+    <section class = "roundData-view container">
+		- <ul>
+			- <% roundData.forEach(round => { %>                            
+				- <li class = "round-item">
+					- <h4>Round:  <%= round.workout_date %></h4>
+					- <p>Week and Day:  <%=round.week_day %></p>  
+				- <a href = " /roundData/<%= round.id %>">View Details</a>  
+				- </li>
+			- <% }) %>
+		- </ul>
+	- </section>
 
 <script></script>
 </body>
 
 </html>
+
