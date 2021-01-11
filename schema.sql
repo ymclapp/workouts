@@ -1,7 +1,7 @@
 
 CREATE TABLE RoundData (
     Id SERIAL PRIMARY KEY,
-    workout_date INTEGER NOT NULL DEFAULT NOW (),
+    workout_date DATE NOT NULL,
     week_day VARCHAR(255) NOT NULL,
     exercise VARCHAR(255) NOT NULL,
     focus_area VARCHAR(255),
